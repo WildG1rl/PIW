@@ -1,0 +1,19 @@
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">{{postagens[index].nomePessoa}}</div>
+    <div class="panel-body">
+        {{postagens[index].texto}}
+    </div>
+    <div class="panel-footer">{{postagens[index].qtdLikes}}
+        <button (click)="curtiu($event);"
+        type="button" class="btn btn-default btn-sm" >
+            <span class="glyphicon glyphicon-heart"aria-hidden="true"></span> 
+          </button>
+          <button (click)="removeu(postagens[index].id)"
+          type="button" class="btn btn-default btn-sm" style="float:right">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            </button>
+    </div>
+  </div>
+  

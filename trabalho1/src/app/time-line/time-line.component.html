@@ -1,0 +1,7 @@
+<app-post [postagens]="postagens"
+          [index]="index"
+          (recebeuCurtida)="capturarCurtida($event)"
+          
+          *ngFor="let index=index;let post of postagens;"
+
+></app-post>
